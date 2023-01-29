@@ -4,7 +4,7 @@
 _get_ziplink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "jepthoniq" ]]
+    if [[ $UPSTREAM_REPO == "Amiraikb" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL0FtaXJhaWtiL0UtWS9hcmNoaXZlL0hlcm9rdS56aXA=/-==" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
@@ -24,7 +24,7 @@ _get_repolink () {
     local regex
     local rlink
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "jepthoniq" ]]
+    if [[ $UPSTREAM_REPO == "Amiraikb" ]]
     then
         rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL0FtaXJhaWtiLy0uZ2l0/-==" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
